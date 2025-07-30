@@ -8,6 +8,7 @@ from datetime import datetime
 from PayPaython_mobile import PayPay
 import json
 import os
+import time
 from threading import Thread
 from server import server_thread
 
@@ -15,6 +16,14 @@ from server import server_thread
 
 TOKEN = os.environ.get("TOKEN")
 ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
+
+# トークンの確認
+if not TOKEN:
+    print("❌ TOKEN環境変数が設定されていません")
+    exit(1)
+
+print(f"✅ TOKEN: {TOKEN[:10]}...")
+print(f"✅ ACCESS_TOKEN: {ACCESS_TOKEN[:10] if ACCESS_TOKEN else 'Not set'}...")
 
 # 接続に必要なオブジェクトを生成
 intents = discord.Intents.default()
@@ -1700,8 +1709,27 @@ async def kwtkzk_auto_setup(interaction: discord.Interaction, channel_id: str, m
 
 # FastAPIサーバーを起動（Koyeb用）
 if __name__ == "__main__":
-    # FastAPIサーバーを別スレッドで起動
-    server_thread()
-    
-    # Botの起動とDiscordサーバーへの接続
-    client.run(TOKEN)
+    try:
+        print("🚀 Discord Bot を起動中...")
+        
+        # FastAPIサーバーを別スレッドで起動
+        print("🌐 FastAPIサーバーを起動中...")
+        server_thread()
+        
+        # サーバー起動の待機
+        time.sleep(3)
+        print("✅ FastAPIサーバーが起動しました")
+        
+        # Botの起動とDiscordサーバーへの接続
+        print("🤖 Discord Bot に接続中...")
+        client.run(TOKEN, log_handler=None)
+        
+    except KeyboardInterrupt:
+        print("🛑 アプリケーションを停止中...")
+    except Exception as e:
+        print(f"❌ 起動エラー: {e}")
+        # エラーが発生してもプロセスを終了しない（Koyebの再起動ループを防ぐ）
+        import time
+        while True:
+            time.sleep(60)
+            print("🔄 エラー後も継続実行中...")

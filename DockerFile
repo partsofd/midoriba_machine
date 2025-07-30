@@ -18,5 +18,23 @@ COPY . /bot
 # ポート開放 (uvicornで指定したポート)
 EXPOSE 8080
 
+# 起動スクリプトを作成
+RUN echo '#!/bin/bash\n\
+echo "🚀 Starting Discord Bot..."\n\
+python app/main.py &\n\
+BOT_PID=$!\n\
+\n\
+echo "🌐 Starting health check server..."\n\
+python app/access.py &\n\
+SERVER_PID=$!\n\
+\n\
+echo "✅ Both services started"\n\
+echo "Bot PID: $BOT_PID"\n\
+echo "Server PID: $SERVER_PID"\n\
+\n\
+# 両方のプロセスを監視\n\
+wait $BOT_PID $SERVER_PID\n\
+' > /bot/start.sh && chmod +x /bot/start.sh
+
 # 実行
-CMD ["python", "app/main.py"]
+CMD ["/bot/start.sh"]
