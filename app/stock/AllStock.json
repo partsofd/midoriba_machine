@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "oreo",
+      "name": "おれおラップ",
+      "description": "雷神おれおのラップ",
+      "price": 1,
+      "created_at": "2025-07-29T03:03:02.021431"
+    },
+    {
+      "id": "nyanko001",
+      "name": "にゃんこ大戦争石垢",
+      "description": "BAN保証なし。猫缶58999個XP99999999NP999999全アイテム300個",
+      "price": 100,
+      "created_at": "2025-07-29T22:02:03.036355"
+    },
+    {
+      "name": "ゆきなラップ",
+      "description": "山下ゆきなのラップ",
+      "price": 1,
+      "id": "yukina",
+      "created_at": "2025-07-30T00:00:36.494538"
+    },
+    {
+      "name": "せーやラップ",
+      "description": "おちょらせーやのラップ",
+      "price": 1,
+      "id": "seiya",
+      "created_at": "2025-07-30T00:01:18.328080"
+    },
+    {
+      "name": "そらちラップ",
+      "description": "殺し屋そらちのラップ",
+      "price": 1,
+      "id": "sorachi",
+      "created_at": "2025-07-30T00:01:42.767951"
+    },
+    {
+      "name": "きゅーちゃんラップ",
+      "description": "サイバーきゅーちゃんのラップ",
+      "price": 1,
+      "id": "qchan",
+      "created_at": "2025-07-30T00:02:15.628930"
+    },
+    {
+      "name": "内カメハック",
+      "description": "配布のTeleのリンクなのでTelegramのアカウントを先に準備してください。",
+      "price": 50,
+      "id": "inside_camera",
+      "created_at": "2025-07-30T03:14:41.790501"
+    },
+    {
+      "name": "ネタロゴ",
+      "description": "アニメとかのパクリロゴを作成できるサイトです。",
+      "price": 50,
+      "id": "netalogo",
+      "created_at": "2025-07-30T03:15:22.114285"
+    },
+    {
+      "name": "鯖アイコン作成ツール",
+      "description": "ショップ鯖向けのGIFロゴを自動で作れます。",
+      "price": 50,
+      "id": "giflogo",
+      "created_at": "2025-07-30T03:16:16.393086"
+    },
+    {
+      "name": "paypayリンク無限生成機",
+      "description": "受け取りまで自動できます。pythonなのでPC必須。",
+      "price": 200,
+      "id": "paypaylinkgen",
+      "created_at": "2025-07-30T11:36:40.413276"
+    },
+    {
+      "name": "Spotify永久垢(保証なし)",
+      "description": "spotifyの永久垢です。メアド変更不可。",
+      "price": 500,
+      "id": "spotify_lifetime",
+      "created_at": "2025-07-30T12:25:27.434211"
+    },
+    {
+      "name": "Netflix永久垢(保証なし)",
+      "description": "Netflixの永久垢です。メアド変更不可。",
+      "price": 500,
+      "id": "netflix_lifetime",
+      "created_at": "2025-07-30T12:26:11.930402"
+    },
+    {
+      "name": "prime video永久垢(保証なし)",
+      "description": "prime videoの永久垢です。メアド変更不可。",
+      "price": 700,
+      "id": "primevideo_lifetime",
+      "created_at": "2025-07-30T12:26:51.115170"
+    },
+    {
+      "name": "disney+永久垢(保証なし)",
+      "description": "disney+の永久垢です。メアド変更不可。",
+      "price": 700,
+      "id": "disney_lifetime",
+      "created_at": "2025-07-30T12:27:36.685212"
+    },
+    {
+      "name": "にゃんこ大戦争石垢2",
+      "description": "BAN保証なし。猫缶58999個XP99999999NP999999ノマチケレアチケ999プラチケ99全アイテム499個ネコビタン999",
+      "price": 500,
+      "id": "nyanko002",
+      "created_at": "2025-07-30T14:08:00.800651"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "machines": [
+    {
+      "id": "twihaipop",
+      "name": "TWIHAIMUSIC",
+      "description": "ツイ廃のPOPはここに",
+      "products": [
+        "oreo",
+        "qchan",
+        "seiya",
+        "sorachi",
+        "yukina"
+      ],
+      "created_at": "2025-07-29T03:04:08.763052",
+      "created_by": 1272824073310699585
+    },
+    {
+      "id": "nyanko",
+      "name": "にゃんこ大戦争自販機",
+      "description": "にゃんこ大戦争の石垢自販機(BANリスク垢あり)",
+      "products": [
+        "nyanko001",
+        "nyanko002"
+      ],
+      "created_at": "2025-07-29T22:03:08.090276",
+      "created_by": 1272824073310699585
+    },
+    {
+      "id": "others",
+      "name": "小物自販機",
+      "description": "便利サイトやツール(自作多め)の販売自販機です。",
+      "products": [
+        "netalogo",
+        "giflogo",
+        "inside_camera",
+        "paypaylinkgen"
+      ],
+      "created_at": "2025-07-30T11:39:22.006356",
+      "created_by": 1272824073310699585
+    },
+    {
+      "id": "subscription",
+      "name": "サブスク自販機",
+      "description": "サブスクの永久垢を販売しています。基本メアド変更不可。",
+      "products": [
+        "netflix_lifetime",
+        "spotify_lifetime",
+        "disney_lifetime"
+      ],
+      "created_at": "2025-07-30T12:30:16.445430",
+      "created_by": 1272824073310699585
+    }
+  ]
+}
