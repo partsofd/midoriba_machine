@@ -8,6 +8,8 @@ from datetime import datetime
 from PayPaython_mobile import PayPay
 import json
 import os
+from threading import Thread
+from server import server_thread
 
 # 自分のBotのアクセストークンに置き換えてください
 
@@ -1696,5 +1698,10 @@ async def kwtkzk_auto_setup(interaction: discord.Interaction, channel_id: str, m
     except Exception as e:
         await interaction.response.send_message(f'❌ エラーが発生しました: {e}', ephemeral=True)
 
-# Botの起動とDiscordサーバーへの接続
-client.run(TOKEN)
+# FastAPIサーバーを起動（Koyeb用）
+if __name__ == "__main__":
+    # FastAPIサーバーを別スレッドで起動
+    server_thread()
+    
+    # Botの起動とDiscordサーバーへの接続
+    client.run(TOKEN)
